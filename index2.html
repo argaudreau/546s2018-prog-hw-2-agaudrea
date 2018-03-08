@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Homework 2 - Problem 2</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="buttons" class="card">
+      <h1 style="display: inline-block">Problem 2 - Ipsalege Wheels</h1>
+      <button id="btn-change-problem" class="button" style="float:right">GO TO PROBLEM 1</button>
+    </div>
+    <hr>
+    <div id="body">
+      <div id="canvas-container" class="card">
+        <canvas id="canvas" class="main-canvas" height="600px" width="800px">
+          Your broswer doesn't support <pre>canvas</pre>!
+        </canvas>
+      </div>
+      <div id="settings-container">
+        <div class="card">
+          <h2>Settings</h2>
+          <hr>
+          <p>Radius: <input id="input-radius" value="100" max="200" type="number"></p>
+          <p>Score:  <input id="input-score" value="100" max="100" type="number"></p>
+          <button class="fill" id="btn-apply-settings">Apply</button>
+        </div>
+        <br>
+        <div class="card">
+          <h2>Style Options</h2>
+          <hr>
+          <h4>Tire</h4>
+          <p><div id="color-tire" class="color"></div>R: <input id="tireR" class="rgb" maxlength="3" value="0" max="255" type="number"> 
+            G: <input id="tireG" class="rgb" maxlength="3" value="0" max="255" type="number"> 
+            B: <input id="tireB" class="rgb" maxlength="3" value="0" max="255" type="number"> 
+            A: <input id="tireA" class="rgb" maxlength="3" value="255" max="255" type="number"></p>
+          <p>Speed:
+            <input type="radio" name="editList" id="slow" value="10"/>
+            <label for="slow">Slow</label>
+            <input type="radio" name="editList" id="medium" value="5" checked/>
+            <label for="medium">Medium</label>
+            <input type="radio" name="editList" id="fast" value="1"/>
+            <label for="fast">Fast</label>
+          </p>
+          <h4>Rim</h4>
+          <p><div id="color-rim" class="color"></div>R: <input id="rimR" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            G: <input id="rimG" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            B: <input id="rimB" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            A: <input id="rimA" class="rgb" maxlength="3" value="255" max="255" type="number"></p>
+          <p>Size: <input id="rimSize" class="rgb" value="70" min="0" max="100" type="number"></p>
+          <h4>Canvas</h4>
+          <p><div id="color-canvas" class="color"></div>R: <input id="canvasR" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            G: <input id="canvasG" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            B: <input id="canvasB" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            A: <input id="canvasA" class="rgb" maxlength="3" value="255" max="255" type="number"></p>
+          <button class="fill" id="btn-apply-options">Apply</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/index2.js"></script>
+  </body>
+</html>

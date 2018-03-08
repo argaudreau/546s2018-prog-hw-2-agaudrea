@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Homework 2 - Problem 1</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="buttons" class="card">
+      <h1 style="display: inline-block">Problem 1 - Fractals</h1>
+      <button id="btn-change-problem" class="button" style="float:right">GO TO PROBLEM 2</button>
+    </div>
+    <hr>
+    <div id="body">
+      <div id="canvas-container" class="card">
+        <canvas id="canvas" class="main-canvas" height="600px" width="800px">
+          Your broswer doesn't support <pre>canvas</pre>!
+        </canvas>
+      </div>
+      <div id="settings-container">
+        <div class="card">
+          <h2>Settings</h2>
+          <hr>
+          <p>Shape: 
+            <select id="input-shape">
+              <option value="0">Line</option>
+              <option value="1">Circle</option>
+              <option value="2">Rectangle</option>
+              <option value="3">Arc</option>
+            </select> 
+          </p>
+          <p>Ratio:  1/<input id="input-ratio" value="3" max="100" type="number"></p>
+          <p>Iterations:  <input id="input-iterations" value="2" type="number"></p>
+          <button class="fill" id="btn-apply-settings">Apply</button>
+        </div>
+        <br>
+        <div class="card">
+          <h2>Style Options</h2>
+          <hr>
+          <h4>Canvas</h4>
+          <p><div id="color-canvas" class="color"></div>R: <input id="canvasR" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            G: <input id="canvasG" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            B: <input id="canvasB" class="rgb" maxlength="3" value="184" max="255" type="number"> 
+            A: <input id="canvasA" class="rgb" maxlength="3" value="255" max="255" type="number"></p>
+          <h4>Stroke</h4>
+          <p><div id="color-stroke" class="color"></div>R: <input id="strokeR" class="rgb" maxlength="3" value="0" max="255" type="number"> 
+            G: <input id="strokeG" class="rgb" maxlength="3" value="0" max="255" type="number"> 
+            B: <input id="strokeB" class="rgb" maxlength="3" value="0" max="255" type="number"> 
+            A: <input id="strokeA" class="rgb" maxlength="3" value="255" max="255" type="number"></p>
+          <p>Size: <input id="size" class="rgb" value="1" max="20" type="number"></p>
+          <p>Line Join:
+            <input type="radio" name="editList" id="round" value="round" checked/>
+            <label for="round">Round</label>
+            <input type="radio" name="editList" id="bevel" value="bevel"/>
+            <label for="bevel">Bevel</label>
+            <input type="radio" name="editList" id="miter" value="miter"/>
+            <label for="miter">Miter</label>
+          </p>
+          <button class="fill" id="btn-apply-options">Apply</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
