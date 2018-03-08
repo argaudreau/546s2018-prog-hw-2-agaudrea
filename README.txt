@@ -1,4 +1,4 @@
-Programming Assignment 1
+Programming Assignment 2
 Graphics 1 Spring 2018
 Programmer: Adam Gaudreau
 Due: 9 March 2018
